@@ -24,7 +24,7 @@
             _gaq.push(['_trackEvent', 'Time', 'Log', formatMS(tif),tif,nonInteractive]);
          }
          else if (typeof ga === 'function') {
-            ga('send', {hitType: 'event', eventCategory: 'Time', eventAction: 'Log', eventLabel: formatMS(tif), nonInteraction: true});
+            ga('send', {hitType: 'event', eventCategory: 'Time', eventAction: 'Log', eventLabel: formatMS(tif), eventValue: 10, nonInteraction: 'true'});
             // console.log('tos: ' + tos + ' ' + formatMS(tos) + ' tif:' + tif + ' ' + formatMS(tif));
          }
        }
